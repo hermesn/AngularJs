@@ -1,0 +1,22 @@
+<html ng-app="listaContato">
+<head>
+	<meta charset="UTF-8" />
+	<title>Lista de Contatos</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+	<div ng-controller="listaCtrl">
+		{{message}}
+	</div>
+	
+		<script>
+		var app = angular.module('listaContato',[]);
+		app.controller("listaCtrl", function ($scope) {
+			$scope.message = "Lista de Contatos";
+		});
+	</script>
+	
+
+</body>
+</html>
